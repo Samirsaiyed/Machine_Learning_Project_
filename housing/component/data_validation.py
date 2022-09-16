@@ -4,7 +4,7 @@ from cgi import test
 import profile
 from tkinter import E
 
-from evidently import dashboard
+from evidently.dashboard import Dashboard
 from housing.logger import logging
 from housing.exception import HousingException
 from housing.entity.config_entity import DataValidationConfig
@@ -136,5 +136,6 @@ class DataValidation:
                 message="Data validation perform successfully"
             )
             logging.info(f"Data Validation Artifact : {data_validation_artifact}")
+            return data_validation_artifact
         except Exception as e:
             raise HousingException(e,sys) from e
