@@ -1,15 +1,16 @@
-from setuptools import setup, find_packages
+from setuptools import setup,find_packages
 from typing import List
 
-# Declaring variable for setup function
-PROJECT_NAME="package-Prediction"
+#Declaring variables for setup functions
+PROJECT_NAME="housing-predictor"
 VERSION="0.0.3"
-AUTHOR="Samir Saiyed"
-DESRCIPTION="Machine Learning End to End project for housing data"
+AUTHOR="Avnish Yadav"
+DESRCIPTION="This is a first FSDS Nov batch Machine Learning Project"
 
 REQUIREMENT_FILE_NAME="requirements.txt"
 
 HYPHEN_E_DOT = "-e ."
+
 
 def get_requirements_list() -> List[str]:
     """
